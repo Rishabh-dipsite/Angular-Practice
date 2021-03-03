@@ -6,13 +6,17 @@ import { AppComponent } from './app.component';
 import { AdvertisementComponent } from './DynamicComponents/advertisement/advertisement.component';
 import { AdHostDirective } from './DynamicComponents/directives/ad-host.directive';
 import { DynamicAdComponent } from './DynamicComponents/dynamic-ad/dynamic-ad.component';
+import { ParentComponent } from './ParentChildInteraction/parent/parent.component';
+import { ChildComponent } from './ParentChildInteraction/child/child.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AdvertisementComponent,
     AdHostDirective,
-    DynamicAdComponent
+    DynamicAdComponent,
+    ParentComponent,
+    ChildComponent
   ],
   imports: [
     BrowserModule,
