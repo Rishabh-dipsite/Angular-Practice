@@ -8,6 +8,8 @@ import { AdHostDirective } from './DynamicComponents/directives/ad-host.directiv
 import { DynamicAdComponent } from './DynamicComponents/dynamic-ad/dynamic-ad.component';
 import { ParentComponent } from './ParentChildInteraction/parent/parent.component';
 import { ChildComponent } from './ParentChildInteraction/child/child.component';
+import { ParentVCComponent } from './ParentChildInteraction/parent-vc/parent-vc.component';
+import { ChildVCComponent } from './ParentChildInteraction/child-vc/child-vc.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { ChildComponent } from './ParentChildInteraction/child/child.component';
     AdHostDirective,
     DynamicAdComponent,
     ParentComponent,
-    ChildComponent
+    ChildComponent,
+    ParentVCComponent,
+    ChildVCComponent
   ],
   imports: [
     BrowserModule,
