@@ -10,6 +10,7 @@ import { ParentComponent } from './ParentChildInteraction/parent/parent.componen
 import { ChildComponent } from './ParentChildInteraction/child/child.component';
 import { ParentVCComponent } from './ParentChildInteraction/parent-vc/parent-vc.component';
 import { ChildVCComponent } from './ParentChildInteraction/child-vc/child-vc.component';
+import { ExpPowerPipe } from './Pipes/exp-power.pipe';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ChildVCComponent } from './ParentChildInteraction/child-vc/child-vc.com
     ParentComponent,
     ChildComponent,
     ParentVCComponent,
-    ChildVCComponent
+    ChildVCComponent,
+    ExpPowerPipe
   ],
   imports: [
     BrowserModule,

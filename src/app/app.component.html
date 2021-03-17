@@ -5,4 +5,16 @@
 <a href="http://localhost:4200/dc">Dynamic Component</a>
 <br/>
 <a href="http://localhost:4200/vc">View Child</a>
+
+<br/>
+<br/>
+<h2>Exemplary Topics</h2>
+
+<br/>
+<br/>
+
+<h3>Pipes</h3>
+<input #inputNumber placeholder="Enter power of 2" type="text" name="" id="" (keyup)="0">
+<p> 2 <sup>{{inputNumber.value ? inputNumber.value : 0}}</sup> = {{ 2 | expPower: inputNumber.value}}</p>
+<p>Number Inputted : {{inputNumber.value}}</p>
 <router-outlet></router-outlet>
