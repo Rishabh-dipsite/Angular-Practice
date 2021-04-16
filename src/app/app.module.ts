@@ -12,6 +12,7 @@ import { ParentVCComponent } from './ParentChildInteraction/parent-vc/parent-vc.
 import { ChildVCComponent } from './ParentChildInteraction/child-vc/child-vc.component';
 import { ExpPowerPipe } from './Pipes/exp-power.pipe';
 import { NgFormsComponent } from './forms/ng-forms/ng-forms.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { NgFormsComponent } from './forms/ng-forms/ng-forms.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

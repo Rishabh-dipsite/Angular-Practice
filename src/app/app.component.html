@@ -19,4 +19,5 @@
 <input #inputNumber placeholder="Enter power of 2" type="text" name="" id="" (keyup)="0">
 <p> 2 <sup>{{inputNumber.value ? inputNumber.value : 0}}</sup> = {{ 2 | expPower: inputNumber.value}}</p>
 <p>Number Inputted : {{inputNumber.value}}</p>
+<hr/>
 <router-outlet></router-outlet>

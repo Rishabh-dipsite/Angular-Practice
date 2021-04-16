@@ -1,6 +1,16 @@
-<!-- <form #f="ngForm" action="">
-    Name : <input name="Name"/>
-    Ph. No. : <input name="phno"/>
+<form #f="ngForm" action="">
+    Name : <input name="Name" [(ngModel)] = "user.name"/>
+    Ph. No. : <input name="phno" [(ngModel)] = "user.phNo"/>
+    <div ngModelGroup="address">
+    Address :
+    <input type="text" name="Address" ngModel/>
+    <br/>
+    Pin Code :
+    <input type="text" name="pinCode" ngModel/>
+
+    </div>
+     
     <button type="submit">Submit</button>
 </form>
-<p>value of form using ng-form {{f.value}}</p> -->
+<p>value of form using ng-form {{f.value | json}}</p>
+<p>value of user using ng-model 2 way binding {{user | json}}</p>
