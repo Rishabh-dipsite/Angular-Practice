@@ -1,13 +1,18 @@
-<form #f="ngForm" action="" class="container-fluid">
+<div *ngIf="isSubmitted && error" class="alert alert-danger">
+    {{error}}
+</div>
+<div *ngIf="!isSubmitted">
+<form #f="ngForm" action="" class="container-fluid" (ngSubmit)="onSubmit()">
     Name : <input name="Name" [(ngModel)] = "user.name"/>
     Ph. No. : <input name="phno" [(ngModel)] = "user.phNo"/>
     <div ngModelGroup="address">
     Address :
-    <input type="text" name="Address" class="form-control" [class.is-invalid]="adr.invalid && adr.touched" ngModel #adr="ngModel" required/>
+    <input type="text" name="Address" 
+    class="form-control" [class.is-invalid]="adr.invalid && adr.touched" [(ngModel)]="user.address" #adr="ngModel" required/>
     <small class="text-danger" [class.d-none]="adr.valid || adr.untouched">Required</small>
     <br/>
     Pin Code :
-    <input type="text" name="pinCode" #pc ngModel/>
+    <input type="text" name="pinCode" #pc [(ngModel)]="user.pinCode"/>
 
     </div>
      
@@ -16,4 +21,5 @@
 <p>value of form using ng-form {{f.value | json}}</p>
 <p>value of user using ng-model 2 way binding {{user | json}}</p>
 <p>value of address {{adr.errors | json}}</p>
-<p>value of pincode className {{pc.className | json}}</p>
+<!-- <p>value of pincode className {{pc.className | json}}</p> -->
+</div>

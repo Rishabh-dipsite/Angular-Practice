@@ -13,6 +13,7 @@ import { ChildVCComponent } from './ParentChildInteraction/child-vc/child-vc.com
 import { ExpPowerPipe } from './Pipes/exp-power.pipe';
 import { NgFormsComponent } from './forms/TemplateDrivenFormTDF/ng-forms.component';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { FormsModule } from '@angular/forms';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
