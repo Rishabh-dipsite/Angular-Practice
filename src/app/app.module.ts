@@ -14,6 +14,7 @@ import { ExpPowerPipe } from './Pipes/exp-power.pipe';
 import { NgFormsComponent } from './forms/TemplateDrivenFormTDF/ng-forms.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from "@angular/common/http";
+import { ReactiveFormsComponent } from './forms/reactive-forms/reactive-forms.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { HttpClientModule } from "@angular/common/http";
     ParentVCComponent,
     ChildVCComponent,
     ExpPowerPipe,
-    NgFormsComponent
+    NgFormsComponent,
+    ReactiveFormsComponent
   ],
   imports: [
     BrowserModule,
